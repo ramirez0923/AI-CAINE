@@ -1,1 +1,2 @@
+#IA Creativa "CAINE"
 Este proyecto esta basado en el personaje fictisio llamado "Caine" de la serie "The Amaizing Circus Digital". Es una IA con simulacion de libre albedrio, con reglas especificas y la personalidad del personaje.
