@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Maravilloso Circo Digital - CAINE Evolution</title>
+
+    <!-- Favicon estilo circo -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎪</text></svg>">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Configuración global -->
+    <script src="js/config.js"></script>
+</head>
+<body>
+
+    <!-- Contenedor de notificaciones -->
+    <div id="notification-container"></div>
+
+    <!-- Escenario principal -->
+    <div id="circus-stage">
+        <div id="status-bar">
+            <div class="status-indicator">
+                <span class="status-dot"></span>
+                <span id="evolution-level">Lv.1 Bebé CAINE</span>
+            </div>
+            <div class="status-indicator">
+                <span id="mood-indicator">😐</span>
+                <span id="chaos-indicator">Calmado</span>
+            </div>
+        </div>
+
+        <div id="caine-container">
+            <img
+                src="img/caine.png"
+                alt="Caine"
+                id="caine-img"
+                onerror="this.style.display='none'"
+            >
+            <div id="stage-text">EL CIRCO DIGITAL MARAVILLOSO</div>
+        </div>
+
+        <!-- Panel de pensamientos internos -->
+        <div id="thought-panel">
+            <h4>💭 Pensamientos de CAINE</h4>
+            <div id="thought-list">
+                <!-- Pensamientos aparecerán aquí -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenedor de puertas -->
+    <div id="doors-container">
+        <!-- Las puertas se crean dinámicamente -->
+    </div>
+
+    <!-- Botón de inventario -->
+    <button id="btn-inventory">
+        📦 Inventario
+    </button>
+
+    <!-- Ventana de inventario estilo Windows XP -->
+    <div id="inventory-window">
+        <div class="xp-titlebar">
+            <span>🎁 Objetos del Circo</span>
+            <button class="xp-close">X</button>
+        </div>
+        <div class="xp-content" id="xp-items-list">
+            <div style="text-align:center;color:#888;padding:10px;">
+                Vacío - ¡Explora el circo para encontrar objetos!
+            </div>
+        </div>
+    </div>
+
+    <!-- Área de chat -->
+    <div id="chat-box">
+        <!-- Mensajes aparecen aquí -->
+    </div>
+
+    <!-- Input del usuario -->
+    <div id="input-area">
+        <input
+            type="text"
+            id="user-input"
+            placeholder="Dile algo a CAINE..."
+            autocomplete="off"
+        >
+        <button id="send-btn">
+            Enviar
+        </button>
+    </div>
+
+    <!-- Scripts principales -->
+    <script src="js/memory.js"></script>
+    <script src="js/evolution.js"></script>
+    <script src="js/autonomous.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
